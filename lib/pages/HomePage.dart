@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
         drawer: const CustomDrawer(),
       body: SingleChildScrollView(
         child: Column(
-          mainAxisSize: MainAxisSize.max,
+          mainAxisSize: MainAxisSize.min,
           children: [
             const SizedBox(
               height: 25,
@@ -37,42 +37,212 @@ class _HomePageState extends State<HomePage> {
               ],
                 centerTitle: true,
             ),
-            SizedBox(height: 25),
+            const SizedBox(
+              height: 20,
+            ),
+            const Text("Categorias",
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              )
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const SizedBox(
+                  width: 15,
+                ),
+
+                Flexible(
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.transparent,
+                          ),
+                          image: const DecorationImage(
+                            image: AssetImage(
+                                "lib/assets/images/baner.jpg"),
+                            fit: BoxFit.fill,
+                          ),
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        padding: const EdgeInsets.only(bottom: 25, top: 25),
+                        width: 100,
+                        height: 100,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      TextButton(onPressed: (){},
+                        child: const Text('Roupas',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black
+                          ),),
+                      ),
+                    ],
+                  ),
+                ),
+
+                const SizedBox(
+                  width: 15,
+                ),
+                Flexible(
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.transparent,
+                          ),
+                          image: const DecorationImage(
+                            image: AssetImage(
+                                "lib/assets/images/baner.jpg"),
+                            fit: BoxFit.fill,
+                          ),
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        padding: const EdgeInsets.only(bottom: 25, top: 25),
+                        width: 100,
+                        height: 100,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      TextButton(onPressed: (){},
+                        child: const Text('Cama, Mesa e Banho',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black
+                          ),),
+                      ),
+                    ],
+                  ),
+                ),
+
+                const SizedBox(
+                  width: 15,
+                ),
+                Flexible(
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.transparent,
+                          ),
+                          image: const DecorationImage(
+                            image: AssetImage(
+                                "lib/assets/images/baner.jpg"),
+                            fit: BoxFit.fill,
+                          ),
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        padding: const EdgeInsets.only(bottom: 25, top: 25),
+                        width: 100,
+                        height: 100,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      TextButton(onPressed: (){},
+                        child: const Text('Decoração',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black
+                          ),),
+                      ),
+                    ],
+                  ),
+                ),
+
+                const SizedBox(
+                  width: 15,
+                ),
+                Flexible(
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.transparent,
+                          ),
+                          image: const DecorationImage(
+                            image: AssetImage(
+                                "lib/assets/images/baner.jpg"),
+                            fit: BoxFit.fill,
+                          ),
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        padding: const EdgeInsets.only(bottom: 25, top: 25),
+                        width: 100,
+                        height: 100,
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      TextButton(onPressed: (){},
+                        child: const Text('Beleza',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black
+                          ),),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(width: 15,)
+
+              ],
+            ),
+            const SizedBox(height: 20),
 
             Container(
-              width: MediaQuery.of(context).size.width * 0.9,
-              height: MediaQuery.of(context).size.height * 0.2,
-              color: Colors.red,
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  // Fundo - Imagem ou Vídeo
-                  Image.network(
-                    'https://br.pinterest.com/pin/314970567673023959/',
-                    fit: BoxFit.cover,),
-                  // Texto
+              width: 450,
+              height: 450,
+              decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Color.fromARGB(232, 248, 13, 33), Colors.black12],
+                  ),
+                  //color: CustomColor.colorBackground,
+                  borderRadius: BorderRadius.all(Radius.circular(50))),
+              child: ListView(
+                padding: EdgeInsets.all(50),
+                children: const [
 
                 ],
               ),
+            ),
+            const SizedBox(height: 20),
+            Container(
+              alignment: Alignment.center,
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              color: Colors.grey[200],
+              child: const Text(
+                '© 2023 Sua Empresa. Todos os direitos reservados.',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
               ),
-
-            SizedBox(height: 25),
-            Container(
-              width: MediaQuery.of(context).size.width * 0.9,
-              height: MediaQuery.of(context).size.height * 0.1,
-              color: Colors.deepOrangeAccent,
             ),
-
-            SizedBox(height: 25),
-            Container(
-              width: MediaQuery.of(context).size.width * 0.9,
-              height: MediaQuery.of(context).size.height * 0.45,
-              color: Colors.white60,
-            ),
-
           ],
+
         ),
+
       ),
+
       ),
     );
 

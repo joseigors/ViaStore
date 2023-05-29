@@ -1,3 +1,6 @@
+import 'package:estudo_de_caso/pages/BelezaPage.dart';
+import 'package:estudo_de_caso/pages/CamaMesaBanhoPage.dart';
+import 'package:estudo_de_caso/pages/DecorationPage.dart';
 import 'package:estudo_de_caso/pages/HomePage.dart';
 import 'package:estudo_de_caso/pages/LoginPage.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +19,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/home',
       routes: {
         '/home': (context) => const HomePage(),
-        '/login': (context) => const LoginPage()
+        '/login': (context) => const LoginPage(),
+        '/cama': (context) => const CamaMesaBanho(),
+        '/decoration': (context) => const DecorationPage(),
+        '/beleza': (context) => const BelezaPage(),
       }
     );
   }}
