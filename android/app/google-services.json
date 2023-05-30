@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "483009989253",
+    "project_id": "via-store",
+    "storage_bucket": "via-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483009989253:android:d0c374fe20bd06268bb7ec",
+        "android_client_info": {
+          "package_name": "com.example.estudo_de_caso"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDhuavn_kEc70thsERxXhnq9ZgObKJaCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

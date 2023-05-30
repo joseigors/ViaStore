@@ -104,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           image: const DecorationImage(
                             image: AssetImage(
-                                "lib/assets/images/baner.jpg"),
+                                "lib/assets/images/cama.jpg"),
                             fit: BoxFit.fill,
                           ),
                           borderRadius: BorderRadius.circular(100),
@@ -141,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           image: const DecorationImage(
                             image: AssetImage(
-                                "lib/assets/images/baner.jpg"),
+                                "lib/assets/images/Decoracao.jpg"),
                             fit: BoxFit.fill,
                           ),
                           borderRadius: BorderRadius.circular(100),
@@ -166,7 +166,7 @@ class _HomePageState extends State<HomePage> {
                 ),
 
                 const SizedBox(
-                  width: 15,
+                  width: 20,
                 ),
                 Flexible(
                   child: Column(
@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           image: const DecorationImage(
                             image: AssetImage(
-                                "lib/assets/images/baner.jpg"),
+                                "lib/assets/images/beleza.jpg"),
                             fit: BoxFit.fill,
                           ),
                           borderRadius: BorderRadius.circular(100),
