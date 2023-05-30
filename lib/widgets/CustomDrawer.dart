@@ -38,7 +38,7 @@ class CustomDrawer extends StatelessWidget {
                 leading: const Icon(Icons.person),
                 title: const Text("Minha conta"),
                 onTap: () {
-                  //Navegar para outra página
+                  Navigator.pushNamed(context, '/perfil');
                 },
               ),
               ListTile(

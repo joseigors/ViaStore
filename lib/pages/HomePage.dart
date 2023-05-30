@@ -207,6 +207,14 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
 
+            Text('Mais vendidos:',
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black
+            ),),
+            const SizedBox(height: 20),
+
             Container(
               width: 450,
               height: 450,
@@ -218,7 +226,91 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.all(Radius.circular(50))),
               child: ListView(
                 padding: EdgeInsets.all(50),
-                children: const [
+                children:  [
+                   Column(
+                    children: [
+                      Column(
+                        children:  [
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.8,
+                            height: MediaQuery.of(context).size.height * 0.2,
+                            decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      "lib/assets/images/cardigan.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                                borderRadius: BorderRadius.all(Radius.circular(50)),
+                                color: Colors.black
+                            ),
+
+                          ),
+                          SizedBox(height: 20),
+                          const Text('Cardigan Midi Canelado ', style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black),
+
+                          ),
+                          const Text('55,90 ', style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black),
+
+                          ),
+
+                        ],
+                      ),
+                      SizedBox(height: 20,),
+                      Column(
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.8,
+                            height: MediaQuery.of(context).size.height * 0.2,
+                            decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      "lib/assets/images/casaco.jpg"),
+                                  fit: BoxFit.cover,
+                                ),
+                                borderRadius: BorderRadius.all(Radius.circular(50)),
+                                color: Colors.black
+                            ),
+
+                          ),
+                          SizedBox(height: 20),
+                          const Text('Blusa De Frio Lillo E Stitch', style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black),
+
+                          ),
+                          const Text('190,90 ', style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black),
+
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 20,),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.8,
+                        height: MediaQuery.of(context).size.height * 0.2,
+                        decoration: BoxDecoration(
+                            color: Colors.black
+                        ),
+                      ),
+                      SizedBox(height: 20,),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.8,
+                        height: MediaQuery.of(context).size.height * 0.2,
+                        decoration: BoxDecoration(
+                            color: Colors.black
+                        ),
+                      ),
+                    ],
+                  ),
 
                 ],
               ),

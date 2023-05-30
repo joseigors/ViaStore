@@ -3,6 +3,7 @@ import 'package:estudo_de_caso/pages/CamaMesaBanhoPage.dart';
 import 'package:estudo_de_caso/pages/DecorationPage.dart';
 import 'package:estudo_de_caso/pages/HomePage.dart';
 import 'package:estudo_de_caso/pages/LoginPage.dart';
+import 'package:estudo_de_caso/pages/Profile.dart';
 import 'package:estudo_de_caso/pages/RegisterPage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
           '/cama': (context) => const CamaMesaBanho(),
           '/decoration': (context) => const DecorationPage(),
           '/beleza': (context) => const BelezaPage(),
+          '/perfil': (context)  => const ProfilePage(),
         }
 
       ),

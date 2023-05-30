@@ -67,6 +67,10 @@ flutter:
     - lib/assets/images/Decoracao.jpg
     - lib/assets/images/VS.jpg
     - lib/assets/images/person.png
+    - lib/assets/images/base.jpg
+    - lib/assets/images/cardigan.jpg
+    - lib/assets/images/casaco.jpg
+    - lib/assets/images/edredon.jpg
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
